@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Text in Multiple Columns & Image Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .multi-column-text {
+      column-count: 3;
+      column-gap: 20px;
+      margin-bottom: 50px;
+      text-align: justify;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Text in Multiple Columns & Image Gallery</h1>
+
+  <div class="multi-column-text">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Morbi pulvinar, magna at ultrices laoreet, sapien purus aliquam sem, sit amet vehicula elit erat vel ligula. Phasellus convallis, nulla at fermentum blandit, sapien nunc ornare urna, nec pulvinar nulla lorem nec sapien.
+    </p>
+    <p>
+      Curabitur non felis et nisl iaculis aliquet. Maecenas vel tellus id justo tincidunt dignissim. Duis tincidunt, erat nec ultricies tincidunt, ipsum mauris faucibus lorem, sed hendrerit sapien nisl ut elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+    </p>
+    <p>
+      Donec vitae magna et sapien suscipit aliquet. Proin id erat eget libero vestibulum gravida. Suspendisse potenti. Integer viverra justo a fermentum volutpat. Sed vitae enim et orci feugiat gravida.
+    </p>
+  </div>
+
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=600" alt="Image 1">
+    <img src="https://images.unsplash.com/photo-1532009324734-20a7a5813719?w=600" alt="Image 2">
+    <img src="https://images.unsplash.com/photo-1524429656589-6633a470097c?w=600" alt="Image 3">
+    <img src="https://images.unsplash.com/photo-1516972810927-80185027ca84?w=600" alt="Image 4">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600" alt="Image 5">
+  </div>
+  
+
+</body>
+</html>
