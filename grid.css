@@ -1,0 +1,62 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  /* Grid parent */
+  h3 {
+    margin-top: 40px;
+  }
+  
+  div[class^="col-"] {
+    float: left;
+    padding: 10px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Clearfix */
+  h3 + div::before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Column width */
+  .col-3 {
+    width: 25%; /* 100 / 4 = 25 */
+  }
+  
+  .col-4 {
+    width: 33.3333%; /* 100 / 3 */
+  }
+  
+  .col-6 {
+    width: 50%; /* 100 / 2 */
+  }
+  
+  /* Small screen (responsive) */
+  @media (max-width: 600px) {
+    .col-s-6 {
+      width: 50%; /* Jadi 2 kolom di layar kecil */
+    }
+  }
+  
+  /* Background colors */
+  .bg-red {
+    background-color: #e74c3c;
+  }
+  
+  .bg-blue {
+    background-color: #3498db;
+  }
+  
+  .bg-green {
+    background-color: #2ecc71;
+  }
+  
